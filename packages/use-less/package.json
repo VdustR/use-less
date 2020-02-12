@@ -27,7 +27,7 @@
     "url": "https://github.com/VdustR/use-less.git"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "rollup": "^1.31.0",
