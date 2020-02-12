@@ -1,5 +1,5 @@
 {
-  "name": "use-less",
+  "name": "react-use-less",
   "version": "0.0.1",
   "description": "useLess is useless",
   "keywords": [
@@ -41,5 +41,6 @@
     "transform": [
       "loose-envify"
     ]
-  }
+  },
+  "gitHead": "271bf631f167fc154f24be2b881744b78f292cf7"
 }
