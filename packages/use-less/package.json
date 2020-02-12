@@ -18,7 +18,7 @@
     "url": "https://VdustR.github.io"
   },
   "main": "index.js",
-  "module": "esm/ues-less.js",
+  "module": "esm/react-use-less.js",
   "scripts": {
     "build": "rollup -c"
   },
