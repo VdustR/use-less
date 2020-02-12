@@ -1,0 +1,45 @@
+{
+  "name": "use-less",
+  "version": "0.0.1",
+  "description": "useLess is useless",
+  "keywords": [
+    "react",
+    "hook",
+    "useless"
+  ],
+  "homepage": "https://github.com/VdustR/use-less",
+  "bugs": {
+    "url": "https://github.com/VdustR/use-less/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ViPro",
+    "email": "VdustR@gmail.com",
+    "url": "https://VdustR.github.io"
+  },
+  "main": "index.js",
+  "module": "esm/ues-less.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VdustR/use-less.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  }
+}

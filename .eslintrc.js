@@ -1,6 +1,8 @@
 module.exports = {
   env: {
     node: true,
+    browser: true,
+    jest: true,
   },
-  extends: ['standard', 'prettier'],
+  extends: ['react-app', 'prettier'],
 };

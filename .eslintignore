@@ -1,4 +1,7 @@
 !.*
+/packages/*/cjs
+/packages/*/esm
+/packages/*/umd
 
 .vscode/*
 !.vscode/settings.json
