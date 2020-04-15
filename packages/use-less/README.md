@@ -2,7 +2,11 @@
 
 useLess is an useless react hook
 
-## Install
+## Usage
+
+### With Pre-processor
+
+Install:
 
 ```bash
 npm i react-use-less
@@ -10,7 +14,7 @@ npm i react-use-less
 yarn add react-use-less
 ```
 
-## Usage
+Import it!
 
 ```js
 import useLess from 'react-use-less';
@@ -18,6 +22,38 @@ import useLess from 'react-use-less';
 const MyComponent = () => {
   useLess(); // 💁‍♂️
 };
+```
+
+## CDN
+
+useLess can be used through CDN:
+
+```html
+<!-- import react-use-less(choose one) -->
+<script crossorigin src="https://cdn.jsdelivr.net/npm/react-use-less"></script>
+<script
+  crossorigin
+  src="https://cdn.jsdelivr.net/npm/react-use-less/umd/use-less.js"
+></script>
+<script
+  crossorigin
+  src="https://cdn.jsdelivr.net/npm/react-use-less/umd/use-less.min.js"
+></script>
+<script crossorigin src="https://unpkg.com/react-use-less"></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-use-less/umd/use-less.js"
+></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-use-less/umd/use-less.min.js"
+></script>
+
+<!-- Also works for module -->
+<script type="module">
+  import useLess from 'https://unpkg.com/react-use-less/esm/use-less.js';
+  // ...
+</script>
 ```
 
 ## License

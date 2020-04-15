@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`will fail every time 1`] = `
+<DocumentFragment>
+  <button>
+    Click to increase: 0
+  </button>
+</DocumentFragment>
+`;
+
+exports[`will fail every time 2`] = `
+<DocumentFragment>
+  <button>
+    Click to increase: 1
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "**/*.test.js",
+    "**/*.test.ts",
+    "**/*.test.jsx",
+    "**/*.test.tsx",
+    "**/__test__/**/*.test.js",
+    "**/__test__/**/*.test.ts",
+    "**/__test__/**/*.test.jsx",
+    "**/__test__/**/*.test.tsx"
+  ]
+}
