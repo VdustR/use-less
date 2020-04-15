@@ -26,8 +26,8 @@
   "module": "esm/use-less.js",
   "types": "esm/use-less.d.ts",
   "exports": {
-    "import": "esm/use-less.js",
-    "require": "cjs/use-less.js"
+    "import": "./esm/use-less.js",
+    "require": "./cjs/use-less.js"
   },
   "type": "module",
   "scripts": {

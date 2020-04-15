@@ -51,6 +51,8 @@ useLess can be used through CDN:
 
 <!-- Also works for module -->
 <script type="module">
+  // choose one
+  import useLess from 'https://cdn.jsdelivr.net/npm/react-use-less/esm/use-less.js';
   import useLess from 'https://unpkg.com/react-use-less/esm/use-less.js';
   // ...
 </script>
