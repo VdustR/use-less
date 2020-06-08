@@ -1,43 +1,49 @@
-import babel from 'rollup-plugin-babel';
+import glob from 'glob';
+import { join } from 'path';
 import { terser } from 'rollup-plugin-terser';
+import typescript from 'rollup-plugin-typescript2';
+import tsconfig from './tsconfig.json';
 
-const input = 'src/use-less.ts';
-const format = 'umd';
-const name = 'useLess';
-const strict = false;
-
-// for babel-preset-react-app
-process.env.NODE_ENV = 'production';
-
-const babelPlugin = babel({
-  extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', '.ts', '.tsx'],
-  runtimeHelpers: true,
+const inputFiles = glob.sync('src/**/*.{js,jsx,ts,tsx}', {
+  cwd: join(__dirname),
+  ignore: tsconfig.exclude,
 });
+const input = 'src/use-less.ts';
+const name = 'useLess';
 
 export default [
   {
-    input,
+    input: inputFiles,
+    preserveModules: true,
     output: [
       {
-        file: 'umd/use-less.js',
-        format,
+        dir: 'esm',
+        format: 'es',
         name,
-        strict,
       },
     ],
-    plugins: [babelPlugin],
+    plugins: [
+      typescript({
+        tsconfig: 'tsconfig.json',
+        tsconfigOverride: { compilerOptions: { declaration: true } },
+      }),
+    ],
   },
   {
     input,
     output: [
       {
         file: 'umd/use-less.min.js',
-        format,
+        format: 'umd',
         name,
-        strict,
         sourcemap: 'source-map',
       },
     ],
-    plugins: [babelPlugin, terser({ ecma: 5, ie8: true })],
+    plugins: [
+      typescript({
+        tsconfig: 'tsconfig.json',
+      }),
+      terser({ ecma: 5, ie8: true }),
+    ],
   },
 ];

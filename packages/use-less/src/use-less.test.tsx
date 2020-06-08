@@ -1,5 +1,5 @@
-import React, { useState, FC } from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
+import React, { FC, useState } from 'react';
 import useLess from './use-less';
 
 const TestComponent: FC = () => {

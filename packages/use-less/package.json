@@ -18,25 +18,16 @@
     "url": "https://VdustR.github.io"
   },
   "files": [
-    "cjs",
     "esm",
     "umd"
   ],
-  "main": "umd/use-less.js",
+  "main": "umd/use-less.min.js",
   "module": "esm/use-less.js",
   "types": "esm/use-less.d.ts",
-  "exports": {
-    "import": "./esm/use-less.js",
-    "require": "./cjs/use-less.js"
-  },
-  "type": "module",
   "scripts": {
-    "build": "yarn clear && yarn build:cjs && yarn build:esm && yarn build:umd",
-    "build:cjs": "tsc --project tsconfig.json --outDir cjs -m CommonJS",
-    "build:esm": "tsc --project tsconfig.json --outDir esm -m ES6",
-    "build:umd": "rollup -c",
+    "build": "yarn clear && rollup -c",
     "clear": "yarn clear:build",
-    "clear:build": "rimraf cjs esm umd",
+    "clear:build": "rimraf esm umd",
     "prepublishOnly": "yarn build"
   },
   "repository": {

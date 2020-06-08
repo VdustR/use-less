@@ -1,10 +1,14 @@
 {
   "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
   "editor.codeActionOnSave": {
-    "source.fixAll": true
+    "source.fixAll": true,
+    "source.organizeImports": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "eslint.enable": true,
   "eslint.validate": ["javascript", "typescript"],
