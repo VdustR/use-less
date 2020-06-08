@@ -33,17 +33,9 @@ useLess can be used through CDN:
 <script crossorigin src="https://cdn.jsdelivr.net/npm/react-use-less"></script>
 <script
   crossorigin
-  src="https://cdn.jsdelivr.net/npm/react-use-less/umd/use-less.js"
-></script>
-<script
-  crossorigin
   src="https://cdn.jsdelivr.net/npm/react-use-less/umd/use-less.min.js"
 ></script>
 <script crossorigin src="https://unpkg.com/react-use-less"></script>
-<script
-  crossorigin
-  src="https://unpkg.com/react-use-less/umd/use-less.js"
-></script>
 <script
   crossorigin
   src="https://unpkg.com/react-use-less/umd/use-less.min.js"
